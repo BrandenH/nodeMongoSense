@@ -6,7 +6,7 @@ var dataloader = {};
 ///////////////////////////////////////////////////////////////////////////
 dataloader.getLastTemperature = function(onSuccess) {
 
-    var url = '/api/sensors/561083be06dd6162658ae8c8/values/last' ;
+    var url = '/api/sensors/5689ffe24e158fca207a64c6/values/last' ;
         
 
 
