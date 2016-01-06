@@ -57,6 +57,9 @@
 			.always(function() {
 			  console.log("complete");
 			});			
+			setTimeout(function(){
+				console.log("Wait for 1s due to mongoDb put weirdness");
+			}, 1000);
 		}
 		</script>
 </body>
