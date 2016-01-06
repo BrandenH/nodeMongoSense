@@ -25,8 +25,8 @@
 </head>
 
 <body onload="setRange()">
-		<input id="slide" type="range" min="0" max="180" step="1" value="0" width="50%" onchange="showValue(this.value)"/>
-		<span id="range"></span>
+		<input id="slide" type="range" min="0" max="180" step="1" value="0" width="80%" onchange="showValue(this.value)"/>
+		<br><span id="range"></span>
 		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
@@ -38,6 +38,7 @@
 		    $.getJSON(url, function(data){
 				document.getElementById('slide').value = data.value;
 				});
+			document.getElementById("range").innerHTML=data.value;
 		}
 		function showValue(newValue)
 		{
